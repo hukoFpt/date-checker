@@ -64,7 +64,7 @@ export default function Home() {
   const checkDate = () => {
     const numberRegex = /^\d+$/;
     if (!numberRegex.test(day)) {
-      alert("Input data for Day is inccorect format");
+      alert("Input data for Day is incorrect format");
       return;
     } else if (parseInt(day) < 1 || parseInt(day) > 31) {
       alert("Input data for Day is out of range");
