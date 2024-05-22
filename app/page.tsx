@@ -96,7 +96,7 @@ export default function Home() {
       <div className="text-2xl text-center font-bold pt-48">
         Date Time Checker
       </div>
-      <div className="flex flex-col justify-center w-1/6 mx-auto">
+      <div className="flex flex-col justify-center w-1/2 md:w-1/6 mx-auto">
         <div className="flex gap-2 pt-2 justify-between">
           <label htmlFor="day">Day: </label>
           <input
