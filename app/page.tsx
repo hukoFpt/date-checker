@@ -1,11 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Home() {
-  (window as any).DaysInMonth = DaysInMonth;
-  (window as any).IsValidDate = IsValidDate;
-  
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      (window as any).DaysInMonth = DaysInMonth;
+      (window as any).IsValidDate = IsValidDate;
+    }
+  }, []);
+
   function clearFields() {
     setDay("");
     setMonth("");
