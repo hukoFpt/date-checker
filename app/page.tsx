@@ -3,6 +3,9 @@
 import React, { useState } from "react";
 
 export default function Home() {
+  (window as any).DaysInMonth = DaysInMonth;
+  (window as any).IsValidDate = IsValidDate;
+  
   function clearFields() {
     setDay("");
     setMonth("");
