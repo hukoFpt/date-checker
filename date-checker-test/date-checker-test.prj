@@ -6,12 +6,12 @@
    <UUID>35c38314-c0b8-4446-a551-2a42fe303f10</UUID>
    <createdEdition>FREE</createdEdition>
    <createdVersion>9.4.0</createdVersion>
-   <freeLicense>true</freeLicense>
+   <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
-   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>9.4.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>F:\date-checker\date-checker-test\date-checker-test.prj</projectFileLocation>
+   <projectFileLocation>D:\date-time-checker\date-checker\date-checker-test\date-checker-test.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
