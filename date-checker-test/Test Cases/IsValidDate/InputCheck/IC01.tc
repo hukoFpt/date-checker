@@ -4,5 +4,6 @@
    <name>IC01</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>1edcbdbc-8609-4a71-a522-84a38740a387</testCaseGuid>
 </TestCaseEntity>

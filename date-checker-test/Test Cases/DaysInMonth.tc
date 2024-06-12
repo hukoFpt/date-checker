@@ -4,5 +4,6 @@
    <name>DaysInMonth</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>79594598-c846-431c-bc78-eca287128962</testCaseGuid>
 </TestCaseEntity>

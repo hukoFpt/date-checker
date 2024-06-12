@@ -15,6 +15,7 @@ export default function Home() {
     setMonth("");
     setYear("");
   }
+  const [result, setResult] = useState(""); // Add this line to define a state variable for the result
 
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
@@ -71,30 +72,36 @@ export default function Home() {
   const checkDate = () => {
     const numberRegex = /^\d+$/;
     if (!numberRegex.test(day)) {
-      alert("Input data for Day is incorrect format");
+      //alert("Input data for Day is incorrect format");
+      setResult("False");
       return;
     } else if (parseInt(day) < 1 || parseInt(day) > 31) {
-      alert("Input data for Day is out of range");
+      //alert("Input data for Day is out of range");
       return;
     }
     if (!numberRegex.test(month)) {
       alert("Input data for Month is incorrect format");
       return;
     } else if (parseInt(month) < 1 || parseInt(month) > 12) {
-      alert("Input data for Month is out of range");
+      //alert("Input data for Month is out of range");
+      setResult("False");
       return;
     }
     if (!numberRegex.test(year)) {
-      alert("Input data for Year is incorrect format");
+      //alert("Input data for Year is incorrect format");
+      setResult("False");
       return;
     } else if (parseInt(year) < 1 || parseInt(year) > 9999) {
-      alert("Input data for Year is out of range");
+      //alert("Input data for Year is out of range");
+      setResult("False");
       return;
     }
     if (IsValidDate(parseInt(year), parseInt(month), parseInt(day))) {
-      alert(`${day}/${month}/${year} is a valid date`);
+      //alert(`${day}/${month}/${year} is a valid date`);
+      setResult("True");
     } else {
-      alert(`${day}/${month}/${year} is NOT a valid date`);
+      //alert(`${day}/${month}/${year} is NOT a valid date`);
+      setResult("True");
     }
   };
 
@@ -156,6 +163,9 @@ export default function Home() {
           >
             Check
           </button>
+        </div>
+        <div>
+          <div className="pt-2 text-xl font-bold text-center">Result: {result}</div>
         </div>
       </div>
     </>
